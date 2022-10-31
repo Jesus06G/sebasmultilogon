@@ -3,7 +3,7 @@
 $config = include 'conexion.php';
 
 try {
-  $conexion = new PDO('mysql:host=' . $config['db']['host'], $config['db']['user'], $config['db']['pass'], $config['db']['options']);
+  $conexion = new PDO('mysql:host=' . $config['db']['bmbzta65sap5rbtk9ugd-mysql.services.clever-cloud.com'], $config['db']['ubh8aptvm54nwrpu'], $config['db']['M3yuXpdhUysSSJGAcXRl'], $config['db']['options']);
   $sql = file_get_contents("data/prueba.sql");
   
   $conexion->exec($sql);
