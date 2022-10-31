@@ -107,8 +107,8 @@ if (!isset($_GET['id'])) {
 
 if (isset($_POST['submit'])) {
   try {
-    $dsn = 'mysql:host=' . $config['db']['host'] . ';dbname=' . $config['db']['name'];
-    $conexion = new PDO($dsn, $config['db']['user'], $config['db']['pass'], $config['db']['options']);
+    $dsn = 'mysql:host=' . $config['db']['bmbzta65sap5rbtk9ugd-mysql.services.clever-cloud.com'] . ';dbname=' . $config['db']['bmbzta65sap5rbtk9ugd'];
+    $conexion = new PDO($dsn, $config['db']['ubh8aptvm54nwrpu'], $config['db']['M3yuXpdhUysSSJGAcXRl'], $config['db']['options']);
 
     $alumno = [
       "id"        => $_GET['id'],
@@ -135,8 +135,8 @@ if (isset($_POST['submit'])) {
 }
 
 try {
-  $dsn = 'mysql:host=' . $config['db']['host'] . ';dbname=' . $config['db']['name'];
-  $conexion = new PDO($dsn, $config['db']['user'], $config['db']['pass'], $config['db']['options']);
+  $dsn = 'mysql:host=' . $config['db']['bmbzta65sap5rbtk9ugd-mysql.services.clever-cloud.com'] . ';dbname=' . $config['db']['bmbzta65sap5rbtk9ugd'];
+  $conexion = new PDO($dsn, $config['db']['ubh8aptvm54nwrpu'], $config['db']['M3yuXpdhUysSSJGAcXRl'], $config['db']['options']);
     
   $id = $_GET['id'];
   $consultaSQL = "SELECT * FROM alumnos WHERE id =" . $id;
